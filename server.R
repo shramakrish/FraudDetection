@@ -64,16 +64,16 @@ shinyServer(function(input, output) {
   })
   observe({
     if(is.null(input$INFORM) || input$INFORM==0 ) return(NULL)
-    from <- "<akshanshgreat@gmail.com>"
-    to <- "<akshanshgreat@gmail.com>"
+    from <- "<shu.ramakrishnan@gmail.com>"
+    to <- "<shu.ramakrishnan@gmail.com>"
     subject <- "Fraud Detection"
     msg <- "Your Account has been compromised"
     sendmail(from, to, subject, msg,control=list(smtpServer="ASPMX.L.GOOGLE.COM"))
-    # send.mail(from = "akshanshis@gmail.com",
+    # send.mail(from = "shu.ramakrishnan@gmail.com",
     #           to = input$custAttr2,
     #           subject = "Fraud Detection",
     #           body = "Your credit has been compromised .Please contact your bank.",
-    #           smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = "akshanshis", passwd = "", ssl = TRUE),
+    #           smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = "shu.ramakrishnan", passwd = "", ssl = TRUE),
     #           authenticate = TRUE,
     #           send = TRUE,
     #            # optional parameter
